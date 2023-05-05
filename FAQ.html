@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/project.css" />
+  </head>
+
+  <body class="faq">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-card">
+        <h2>How can I get the most benefit from the website?</h2>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-caret-down drop-btn"></i>
+          <i class="fa-sharp fa-solid fa-circle-xmark cross-btn"></i>
+        </div>
+        <p class="answer">
+          To get the most benefit from the website you must provide accurate
+          health details in order to calculate your data accurately and to
+          follow your daily calorie goal every day in order to reach your goals,
+          and to try one of our recipes in the recipes section also don't forget
+          to try one of our workouts in the workouts section to be fit
+        </p>
+      </div>
+      <div class="faq-card">
+        <h2>
+          Does it mean I will not reach my goal if I do not follow the plan for
+          a few days?
+        </h2>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-caret-down drop-btn"></i>
+          <i class="fa-sharp fa-solid fa-circle-xmark cross-btn"></i>
+        </div>
+        <p class="answer">
+          of course not, it is normal not to follow the plan for a couple of
+          days, but we recommend tracking your daily calorie plan as much as
+          possible if you want effective results.
+        </p>
+      </div>
+      <div class="faq-card">
+        <h2>What can I share in the discussion section?</h2>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-caret-down drop-btn"></i>
+          <i class="fa-sharp fa-solid fa-circle-xmark cross-btn"></i>
+        </div>
+        <p class="answer">
+          You can share anything related to nutrition fitness health you can
+          share your health journey, ask questions regarding these aspects,
+          share recipes, meet new people and make friends you can't share
+          anything not related to the website subjects, or any inappropriate
+          material
+        </p>
+      </div>
+      <div class="faq-card">
+        <h2>
+          what will happen if someone shares something inappropriate in the
+          discussion forum?
+        </h2>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-caret-down drop-btn"></i>
+          <i class="fa-sharp fa-solid fa-circle-xmark cross-btn"></i>
+        </div>
+        <p class="answer">
+          The admin will take the appropriate action towards this, and both the
+          post and the user will be removed from the website as soon as
+          possible.
+        </p>
+      </div>
+      <div class="faq-card">
+        <h2>How can I contact a nutrition expert via the website</h2>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-caret-down drop-btn"></i>
+          <i class="fa-sharp fa-solid fa-circle-xmark cross-btn"></i>
+        </div>
+        <p class="answer">
+          You can find in the 'contact nutrition expert' section some emails and
+          Instagram accounts of some nutrition you can send them a message there
+          and they will register you in their programs, don't also forget to
+          track your calories on the website
+        </p>
+      </div>
+      <button style="width: 50%; margin: 0 auto" class="btnn">
+        <a style="color: white" href="index.html">Back to home page</a>
+      </button>
+    </div>
+  </body>
+  <script>
+    const toggleBtn = document.querySelectorAll(".toggle-btn");
+
+    toggleBtn.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.parentNode.classList.toggle("active"); // toggles the parent node which is the '.faq-card' 
+      });
+    });
+  </script>
+</html>
